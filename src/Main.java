@@ -2,7 +2,6 @@ public class Main {
 
     public static void main(String[] args) {
 
-        // Задание 6
         Author author1 = new Author("Стивин", "Кинг");
         Author author2 = new Author("Лев", "Толстой");
 
@@ -19,7 +18,6 @@ public class Main {
                 " " + book2.getAuthor().getSecondName()+
                 "; Year of publication - " + book2.getYearOfPublication());
 
-        // Задание 7
         book1.setYearOfPublication(2010);
         System.out.println("book1 = " + book1.getBookName() +
                 "; Name and secondName - " + book1.getAuthor().getName() +
