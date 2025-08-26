@@ -37,12 +37,12 @@ public class Book {
             return false;
         }
         Book newBook = (Book) object;
-        return bookName.equals(newBook.bookName);
+        return bookName.equals(newBook.bookName) && author.equals(newBook.author) && yearOfPublication == newBook.yearOfPublication;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(bookName);
+        return Objects.hash(bookName, author.hashCode(), yearOfPublication);
     }
 
     @Override

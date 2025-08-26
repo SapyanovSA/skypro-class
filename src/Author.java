@@ -26,7 +26,7 @@ public class Author {
         if (this == object) {
             return true;
         }
-        if (getClass() != object.getClass() || getClass() == null) {
+        if (getClass() != object.getClass() || object == null) {
             return false;
         }
         Author author = (Author) object;

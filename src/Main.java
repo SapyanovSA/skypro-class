@@ -45,7 +45,7 @@ public class Main {
         System.out.println(new Book("Высота", newAuthor, book1.getYearOfPublication()));
         // equals
         Book newBook1 = new Book("Темная башня", author3, book1.getYearOfPublication());
-        Book newBook2 = new Book("Темная башня", author4, book2.getYearOfPublication());
+        Book newBook2 = new Book("Темная башня", author3, book1.getYearOfPublication());
         System.out.println("Проверка на одинаковые названия книг: " + newBook1 + " == " + newBook2 + " ?");
         System.out.println("Вывод: " + newBook1.equals(newBook2));
     }
